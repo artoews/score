@@ -49,18 +49,18 @@ conda activate score
 ```
 conda activate score
 cd path/to/score
-bash main_recon.sh path/to/scan_dir
+bash main_recon.sh path/to/scan_subdir
 ```
 
 Repeat the last command for each of the three phantom scan subdirectories (gz-off, gz-on, and gz-on-plastic-replica). Expected run time is about 1 hour per scan directory.
 
 Note that gradient non-linearity correction is disabled by default because it relies on proprietary software (GERecon module) from GE Healthcare.
 
-Optional: after each call to main_recon.sh, you may delete all files in scan_dir except the final reconstruction outputs (im_post.{cfl.hdr}) to free up storage.
+Optional: after each call to main_recon.sh, you may delete all files in scan_subdir except the final reconstruction outputs (im_post.{cfl.hdr}) to free up storage.
 
 ```
-find path/to/scan_dir -type f ! -name 'im_post.*' -print   # dry run (always a good idea!)
-find path/to/scan_dir -type f ! -name 'im_post.*' -delete
+find path/to/scan_subdir -type f ! -name 'im_post.*' -print   # dry run (always a good idea!)
+find path/to/scan_subdir -type f ! -name 'im_post.*' -delete
 ```
 
 2. Plot figures from paper
