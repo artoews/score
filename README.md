@@ -73,7 +73,7 @@ cd path/to/score
 bash main_plotting.sh path/to/data_dir path/to/save_dir
 ```
 
-Reference outputs for figures 1-5 and A1 are provided [here](figures-mrm).
+Reference outputs for figures 1-5 and A1 are provided [here](figures-mrm). Note that the GE-proprietary gradient non-linearity correction was applied to produce these figures, so your results may differ in this regard.
 
 ## Acknowledgements
 
