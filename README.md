@@ -20,10 +20,7 @@ A GPU is required to run the image reconstruction code.
 
 1. Download the data
 
-The supporting dataset is pending upload to Zenodo at [10.5281/zenodo.22942186](10.5281/zenodo.22942186), but Zenodo is currently experiencing technical issues.
-In the meantime the dataset is readily available [here](https://drive.google.com/file/d/1jwp15IqCrSBy-v_DDs32Dt0-KdS32BUL/view?usp=sharing) on Google Drive.
-
-The dataset includes photographs, coil-compressed k-space data, and sequence metadata necessary to reproduce the phantom results presented in the article.
+The supporting dataset is available on Stanford Data Repository at [https://doi.org/10.25740/kr965hc1106](https://doi.org/10.25740/kr965hc1106). The dataset includes photographs, coil-compressed k-space data, and sequence metadata necessary to reproduce the phantom results presented in the article.
 
 2. Install BART toolbox
 
@@ -32,7 +29,9 @@ Installation page is [here](https://mrirecon.codeberg.page/installation.html). T
 Make sure the BART toolbox's python/ directory is on your Python path.
 
 ```
-export PYTHONPATH=$TOOLBOX_PATH/python:$PYTHONPATH
+export PYTHONPATH=$TOOLBOX_PATH/python:$PYTHONPATH # older versions of BART
+# or
+export PYTHONPATH=$BART_TOOLBOX_PATH/python:$PYTHONPATH # newer versions of BART
 ```
 
 3. Create conda environment
